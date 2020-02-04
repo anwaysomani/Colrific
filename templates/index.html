@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- metas -->
+    {% block meta %}
+    {% endblock meta %}
+    <!-- /metas -->
+
+    <title>{{ page_title }}</title>
+
+    {% block headerscripts %}
+    {% endblock headerscripts %}
+
+</head>
+<body>
+    <section id="container">
+        {% block header %}
+        {% endblock header %}
+
+        {% block sidebar %}
+        {% endblock sidebar %}
+
+        {% block footer %}
+        {% endblock footer %}
+    </section>
+
+    {% block footerscripts %}
+    {% endblock footerscripts %}
+</body>
+</html>
